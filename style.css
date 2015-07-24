@@ -1,0 +1,80 @@
+html, body{
+	padding: 0;
+	font-family: "Maven Pro", sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	width: 800px;
+	text-align: center;
+	margin: 25px auto;
+}
+
+hr{
+	width:80%;
+}
+
+.input, .output{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+
+}
+
+.input{
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 25px 25px;
+	vertical-align: top;
+	padding: 10px;
+}
+
+form{
+	text-align: right;
+}
+
+form label, form input{
+	margin: 25px auto;
+}
+
+
+
+button{
+	height: 24px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px 3px black;
+	width: 100px;
+	text-align: center;
+	margin: 25px auto;
+}
+
+
+button:hover{
+	cursor: pointer;
+}
+
+.button_wrap{
+	text-align: center;
+}
+
+#submit, #cancel{
+	display: inline-block;
+	margin: 10px;
+	font-family: "Maven Pro", sans-serif;
+}
+
+
+
+#reset{
+	margin-left: 600px;
+	margin-top: -10px;
+}
+
+.customer_charges, .my_earning{
+	border: 1px solid black;
+	margin: 25px auto;
+	padding: 10px;
+	border-radius: 5px;
+}
