@@ -1,0 +1,33 @@
+
+      <div class="input">
+          <p>Enter the Meal Details</p>
+          <hr/>
+
+        <form name="input_form">
+          <label>Base Meal Price: $</label><input ng-model="meal_price" required type="number" name="meal_price">
+          <br>
+          <label>Tax Rate: %</label><input ng-model="tax_rate" required type="number" name="tax_rate" required>
+          <br>
+          <label>Tip Percentage: %</label><input ng-model="tip_percentage" required type="number" name="tip_percentage" required>
+          <br>
+          <div class="button_wrap">
+            <button id="cancel" ng-click='cancel()'>Cancel</button>
+            <button id="submit" type="submit" ng-click='submit_new()'>Submit </button>
+          </div><!-- .button_wrap-->
+
+        </form>
+
+        
+      </div> <!-- .input-->
+
+      <div class="customer_charges">
+          <p>Customer Charges</p>
+          <hr>
+          <p>Subtotal  {{subtotal|number:2}}</p>
+          <p>Tip {{tip|number:2}}</p>
+          <hr>
+          <p>Total {{total|number:2}}</p>
+      
+      </div> <!-- .customer_charges-->
+
+     

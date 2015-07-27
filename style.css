@@ -1,8 +1,45 @@
 html, body{
-	padding: 0;
+	margin:0;
+	padding:0;
+    height:100%;
 	font-family: "Maven Pro", sans-serif;
 	font-size: 1em;
 }
+
+
+.loading {
+  height:100%;
+}
+
+.loading:before {
+  position:absolute;
+  content:"";
+  left:0;
+  bottom:0;
+  right:0;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,0.9) no-repeat center center;
+  background-image: url('./loading-animation.gif');
+}
+
+
+.animate-view-container { position:relative; min-height: 100%; }
+.animate-view.ng-enter,
+.animate-view.ng-leave {
+    transition:1s linear all;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#eee;
+}
+.animate-view.ng-enter { opacity:0; z-index:100; }
+.animate-view.ng-enter.ng-enter-active { opacity:1; }
+.animate-view.ng-leave { opacity:1; z-index:99; }
+.animate-view.ng-leave.ng-leave-active { opacity:0; }
+
 
 .container{
 	width: 800px;
@@ -14,19 +51,27 @@ hr{
 	width:80%;
 }
 
-.input, .output{
-	display: inline-block;
-	width: 300px;
+a:hover{
+	cursor: pointer;
+}
+
+.intro{
+	width: 500px;
+	margin: 25px auto;
+	text-align: justify;
+}
+
+.input, .customer_charges, .output{
+	display: block;
+	width: 350px;
 	text-align: center;
+	margin: 25px auto;
 
 }
 
 .input{
-	height: 500px;
 	border: 1px solid black;
 	border-radius: 5px;
-	margin: 25px 25px;
-	vertical-align: top;
 	padding: 10px;
 }
 
