@@ -86,13 +86,14 @@ form label, form input{
 
 
 button{
-	height: 24px;
+	height: 30px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-shadow: 2px 2px 3px 3px black;
 	width: 100px;
 	text-align: center;
 	margin: 25px auto;
+	font-size: 1em;
 }
 
 
@@ -113,8 +114,7 @@ button:hover{
 
 
 #reset{
-	margin-left: 400px;
-	margin-top: -10px;
+	margin: -10px auto 0 auto;
 }
 
 .customer_charges, .my_earning{
